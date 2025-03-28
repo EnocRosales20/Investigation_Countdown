@@ -2,7 +2,7 @@
 
 **Tema**: Digital Forensics
 
-![image.png](image.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image.png)
 
 ### **Escenario:**
 
@@ -16,7 +16,7 @@ La policía cree que Zerry está directamente asociado con la pandilla y está a
 
 **En una carrera contra el tiempo, ¿podrás investigar una computadora portátil incautada por las fuerzas del orden para identificar si una amenaza de bomba es real o un engaño?**
 
-![countdown.PNG](countdown.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%200.png)
 
 # Presentación de investigación
 
@@ -24,9 +24,9 @@ Empezamos:
 
 Damos click en “Start Investigation” y se abrira nuesta maquina virtual donde trabajaremos.
 
-![image.png](6c1716b1-2c4c-4cfe-a8c2-53c1d168cd17.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2001.png)
 
-![image.png](699c7407-d06e-4e5e-8117-179a5c947b9e.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2002.png)
 
 ### 1.Verifique la imagen del disco. Enviar SectorCount y MD5
 
@@ -34,20 +34,20 @@ Damos click en “Start Investigation” y se abrira nuesta maquina virtual dond
 
 Entrar a la carpeta “Investigation Files” que se encuentra en el escritorio y entramos a la carpeta “Disk Image”.
 
-![image.png](1bc2b5b3-8a46-44a6-baf9-87996b1d67c9.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2003.png)
 
 Dentro de Disk Image entramos a Zerry
 
-![image.png](image%201.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2004.png)
 
 Abrimos Zerry.E01.txt y buscamos lo que nos pide:
 
 - Sector Count
 - MD5 checksum
 
-![image.png](6fb65de8-a1f7-4d65-98a6-11b8653c0f05.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2005.png)
 
-![image.png](14c29235-2312-4019-aac0-77f0dc80b8a9.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2006.png)
 
 **Respuesta:** 25,165,824 , 5c4e94315039f890e839d6992aeb6c58
 
@@ -59,31 +59,31 @@ Una vez que crea que ha encontrado el programa adecuado, intente buscar en líne
 
 Abrimos Autopsy, que se encuentra en el escritorio
 
-![image.png](cc908012-9753-437d-8e5f-f0d41a0a136c.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2007.png)
 
 Hacemos click en “Open Recent Case” y selecionamos Countdown y click en Open
 
-![image.png](image%202.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2008.png)
 
 Una vez ya cargado nuesto caso, lo que haremos sera buscar el archivo que necesitamos, para esto debes seguir esta direccion para encontrar el archivo:
 
 Data Source > Zerry.E01 > vol3(NTFS/exFAT(0x07):104448-24125556) >Users >Zerry🍎 >AppData > Roaming > Signal > config.json
 
-![image.png](f737c282-8e23-45fb-983d-dad004f9f705.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2009.png)
 
 Al archivo config.json hacemos click dercho y click en Extract File(s)
 
-![image.png](ff4a71af-b719-4866-ab11-ffeb1098e865.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2010.png)
 
 Y lo extraemos en el escritorio 
 
-![image.png](4c331197-4b25-43b2-829d-04dc9a827b68.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2011.png)
 
-![image.png](69fa1a1d-8966-47ca-a123-6129174e01c9.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2012.png)
 
 Abrimos el archivo config.json que esta en el esritorio. Y ahi tenemos la respuesta
 
-![image.png](d47cd577-48e7-44a4-940b-92eb5c975b66.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2013.png)
 
 **Respuesta**: c2a0e8d6f0853449cfcf4b75176c277535b3677de1bb59186b32f0dc6ed69998
 
@@ -93,21 +93,21 @@ Abrimos el archivo config.json que esta en el esritorio. Y ahi tenemos la respue
 
 Entrar a la carpeta “Investigation Files” que se encuentra en el escritorio luego entramos a la carpeta “Tools” y abrimos SQLiteDatabaseBrowserPortable
 
-![image.png](4fa412aa-b8d7-4db1-846b-5f98eb24fca9.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2014.png)
 
 En la misma direccion de la pregunta 2, vamos a abrir sql, deberia ser asi:
 
 Data Source > Zerry.E01 > vol3(NTFS/exFAT(0x07):104448-24125556) >Users >Zerry🍎 >AppData > Roaming > Signal > sql >db.sqlite
 
-![image.png](f5e96536-3f9c-4256-ac5a-962a58b10ce9.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2015.png)
 
 Extraemos el archivo “db.sqlite” al escritorio
 
-![image.png](81052fa2-4595-481e-b790-f9127380ddc9.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2016.png)
 
 Ahora entramos a SQLiteDatabaseBrowserPortable y click en “Open Database” , buscamos en Desktop y abrimos el archivo db.sqlite
 
-![image.png](a4e5003e-5718-4b0e-a6c6-707bfa63b546.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2017.png)
 
 Se abrira una ventana donde nos pedira la contraseña, para esto primero cambiamos “Passphrase” por “Raw key”
 
@@ -117,25 +117,25 @@ Seria: 0xc2a0e8d6f0853449cfcf4b75176c277535b3677de1bb59186b32f0dc6ed69998
 
 Lo demas lo dejamos por defecto y hacemos click en OK
 
-![image.png](754e7356-c06d-4b6e-b980-9c6d5c429d70.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2018.png)
 
 Se nos abrira la Base de Datos
 
-![image.png](52dc60aa-7f24-4d95-a1d2-ffd9921f1d88.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2019.png)
 
 Luego vamos a la tabla “conversations” , damos click derecho y click en Browse Table
 
-![image.png](6d21ac33-7e83-4085-96a7-a7ede477efd1.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2020.png)
 
 Dentro de la tabla encontramos lo que es el telefono y perfil
 
-![image.png](6a588fb8-01a0-49ae-aaf2-dde998b5d9bf.png)
+![](6https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2021.png)
 
-![image.png](1561cf39-450b-4718-bd1d-7049930762be.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2022.png)
 
 Para el caso del emoji que sale en el nombre, buscaremos en emojipedia. Buscamos Fire y copiamos el emoji
 
-![image.png](bdd79bd7-b6df-4e30-aa9f-69cd290f8420.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2023.png)
 
 **Respuesta:** 13026482364,ZerryThe🔥 
 
@@ -145,9 +145,9 @@ Para el caso del emoji que sale en el nombre, buscaremos en emojipedia. Buscamos
 
 Click derecho en “messages” y hacemos click en browse table
 
-![image.png](image%203.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2024.png)
 
-![image.png](image%204.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2025.png)
 
 Podemos ver la conversacion y saber el contexto. Buscamos el ID del correo
 
@@ -159,13 +159,13 @@ Podemos ver la conversacion y saber el contexto. Buscamos el ID del correo
 
 Entramos al Autopsy y vamos: Extracted Content << Recent Documents . Ahi encontramos el nombre del archivo 
 
-![image.png](12e10cd5-92c6-42d8-be2b-966bc237cd6e.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2026.png)
 
 Nos vamos a Emojipedia y buscamos los emojis que necesitamos
 
-![image.png](image%205.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2027.png)
 
-![image.png](75e06827-add9-4b37-a86f-9df5a49ee238.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2028.png)
 
 **Respuesta:** ⌛📅.png
 
@@ -179,21 +179,21 @@ Nos vamos a Emojipedia y buscamos los emojis que necesitamos
 
 Una vez dentro buscamos el archivo thumbcache_256.db , damos click derecho y Extract File(s) . Lo extraemos en el escritorio
 
-![image.png](49801f4e-c261-4bfa-b394-f88b98315e5a.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2029.png)
 
-![image.png](6cdd40d2-0437-4d48-a972-22415797fe67.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2030.png)
 
 Vamos a la carpeta Investigation Files que se encuentra en el escritoio, luego a la carpeta Tools y abrimos el “thumbcache_viewer”
 
-![image.png](0e3cf643-e968-4d58-99b9-b1de2b0d54ed.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2031.png)
 
-![image.png](cf0ea2ee-0ac4-4003-be93-34e6f1a632a4.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2032.png)
 
 Una vez abierta damos click en “File” y luego a “Open” , buscamos el archivo que extraimos en el escritorio “thumbcache_256”.
 
 Observamos que la mayoria son de 0KB , pero uno es de 9KB donde se encuentra la fecha.
 
-![image.png](8d097cc0-0aa9-4ff5-9d4c-765bd725a3aa.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2033.png)
 
 Respuesta: 01-02-2021 09:00 AM
 
@@ -209,54 +209,53 @@ Entramos a Autposy y buscamos la siguiente direccion : /Users/Zerry/AppData/Loca
 
 Buscamos la carpeta Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe y extraemos al escritorio toda la carpeta
 
-![image.png](f667635d-6402-48f1-861a-b314a6a72ed4.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2034.png)
 
 Abrimos SQLiteDatabaseBrowserPortable , luego click en Open Database , buscamos la carpeta en escritorio que es Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe , luego abrimos Local State y hacemos click al archivo plum.sqlite
 
-![image.png](7ea55ac6-d81f-4248-98ff-3957d3d72bb8.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2035.png)
 
 Click derecho a la tabla “Note” y click en Browse Table
 
-![image.png](068cc6d6-8105-4c7d-8a0f-2f61a09e26e1.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2037.png)
 
 Copiamos lo que se encuentra en la columna “Text”
 
-![image.png](7ef49f9a-97be-477e-b2e7-7ecf1a2c4270.png)
-
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2038.png)
 Borramos la primera parte y dejamos desde “40 qrterrf …” hasta el ultimo digito 
 
-![image.png](5e94ddc9-397c-4b87-b7d6-5dec5a99a651.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2039.png)
 
 En Autopsy buscamos esta direccion TorBrowser/Browser/TorBrowser/Data/Browser/profile.default/places.sqlite
 
-![image.png](image%206.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2040.png)
 
 Y extraemos al escritorio el archivo places.sqlite
 
-![image.png](dce8b3c9-d01f-438c-bdb7-f76cef674eb1.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2041.png)
 
 Abrimos el archivo con SQLiteDatabaseBrowserPortable, haciendo click en Open Database y buscando el archivo places.sqlite
 
-![image.png](da044cfa-4aba-4bc1-9ffc-dcd9cf832742.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2042.png)
 
 Abrimos el archivo “moz_places” con clik derecho y en “Browse Table”
 
-![image.png](ce6f5a9e-ab54-4239-a3a4-b17629698c77.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2043.png)
 
 Observamos que es encirptado en rot13
 
-![image.png](05672a5c-6550-4a1e-a19e-fc57d1b40b18.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2044.png)
 
 Abrimos el CyberChef que se encuentra en el escritorio
 
-![image.png](ce56a659-999d-4903-8bd0-21c5fd4ede4e.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2045.png)
 
 En input ponemos lo que teniamos el “40 qrterrf …” y en Recipe el “ROT13”
 
-![image.png](image%207.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2046.png)
 
 Entonces nos sale la respuesta
 
 ### Felicidades, completaste todas las respuestas:
 
-![image.png](7eed8c85-6bd9-40b3-bb88-b0b301f6218e.png)
+![](https://github.com/EnocRosales20/Investigation_Countdown/blob/main/images/image%2047.png)
